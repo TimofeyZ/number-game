@@ -1,10 +1,12 @@
 console.log("чебурек");
+
 let hearts = document.getElementById("h2")
 let hints = document.getElementById("hints")
 let secret = Math.floor(Math.random() * 10 + 1)
 console.log(secret);
 let playerInput = document.getElementById("input")
 console.log(120 / 6);
+playerInput.focus()
 let hp = 3
 console.log("жизхни:" + hp);
 
@@ -16,7 +18,8 @@ check.onclick = function () {
    if (playerInput.value == secret) {
       console.log("🎯");
       hearts.innerHTML = ("🎯")
-      check.disabled=true
+      check.disabled = true
+      hints.innerHTML = "..."
    }
    else {
       console.log("❌");
@@ -25,7 +28,7 @@ check.onclick = function () {
       if (hp == 0) {
          hints.innerHTML = "загаданое число " + secret
          hearts.innerHTML = "❌"
-         check.disabled=true
+         check.disabled = true
       }
       else {
          hearts.innerHTML = "💖".repeat(hp)
@@ -45,11 +48,13 @@ check.onclick = function () {
 let newgame = document.getElementById("newgame")
 console.log(newgame);
 newgame.onclick = function () {
-secret=Math.floor(Math.random() * 10 + 1)
-hp=3
-hints.innerHTML = ("...")
-hearts.innerHTML = "💖".repeat(hp)
-check.disabled=false
+   playerInput.value=""
+   playerInput.focus()
+   secret = Math.floor(Math.random() * 10 + 1)
+   hp = 3
+   hints.innerHTML = ("...")
+   hearts.innerHTML = "💖".repeat(hp)
+   check.disabled = false
 
 
 }

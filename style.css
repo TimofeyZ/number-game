@@ -8,13 +8,13 @@ body{
 .game{
     color:rgb(255, 214, 152);
     text-align: center;
-    background-image: url("к.jpg");
+    background-color: rgb(255, 153, 0);
     padding: 20px;
     width: 90%; 
     max-width:500px ;
 margin: auto;
 border-radius: 10px;
-border: 5px solid rgb(255, 214, 152);
+border: 5px solid rgb(0, 0, 0);
 position: absolute;
 top: 50%;
 left: 50%;
@@ -22,8 +22,29 @@ transform: translate(-50%,-50%);
 
 }
 h1{
-    color:rgb(255, 214, 152);
+    color:rgb(0, 0, 0);
 }
 p{
     font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+input,button{
+    font-family: "Amatic SC", sans-serif;
+    color:rgb(0, 0, 0);
+    height: 40px;
+    background-color: rgb(255, 153, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 32px;
+    line-height: 27px;
+}
+input{
+width: 110px;
+    display: block;
+    margin: auto;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 10px;
+height: 40px;
 }
