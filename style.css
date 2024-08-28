@@ -1,0 +1,29 @@
+body{
+    font-family: "Amatic SC", sans-serif;
+    background-image: url("к.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.game{
+    color:rgb(255, 214, 152);
+    text-align: center;
+    background-image: url("к.jpg");
+    padding: 20px;
+    width: 90%; 
+    max-width:500px ;
+margin: auto;
+border-radius: 10px;
+border: 5px solid rgb(255, 214, 152);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+h1{
+    color:rgb(255, 214, 152);
+}
+p{
+    font-size: 20px;
+}
